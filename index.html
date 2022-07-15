@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="pp.css">
+  </head>
+  <body>
+      <h1 id='title'>XENEON Member Survey</h1>
+      <p id="description">Thank you for helping us improve our platform!</p>
+      <form id='survey-form'>
+        <fieldset><h2>Details to sell to govt.</h2>
+          <label id="name-label">Enter your name: <input id="name" type="text" placeholder='John Doe' required /></label>
+          <label id="email-label">Enter your E-Mail: <input id="email" type='email' placeholder="example@gmail.com" required /></label>
+          <label id="number-label">Enter your age: <input id="number" type="number" min="0" max="100"  placeholder="69" required /></label>
+          <label id="gender">Gender: <select id="dropdown" required><option value="">(select one)</option><option value="1">Male</option><option value="2">Female</option><option value="3">Made up words</option></select></label>
+          <label id="religion">Religion: <select><option>(select one)</option><option>Monke</option></select></label>
+        </fieldset>
+        <fieldset>
+          <h2>Qualification</h2>
+          <label><input type="radio" value="1" name="personality" class="inline" /> Autistic</label>
+          <label><input type="radio" value="2" name="personality" class="inline" /> Retarded</label>
+          <label><input type="radio" value="3" name="personality" class="inline" /> Maidenless</label>
+          <label><input type="radio" value="4" name="personality" class="inline" /> All of them (Based)</label>
+        </fieldset>
+        <fieldset>
+          <h2>Ugly nigga alert!</h2>
+          <label>Upload your picture: <input type='file' name='image' /></label>
+        </fieldset>
+        <fieldset for="Game">
+          <h2>Gaming Platform</h2>
+          <label><input type="checkbox" value="pc" /> PC</label>
+          <label><input type="checkbox" value="ps" /> Peasant Station 5(PS5)</label>
+          <label><input type="checkbox" value="xb" /> Trashbox(Xbox)</label>
+          <label><input type="checkbox" value="nd" /> Nintendo</label>
+        </fieldset>
+        <fieldset>
+          <h2>5 favourite songs</h2>
+          <textarea name="bio" rows="3" cols="30" placeholder="e.g. Sunflower"></textarea>
+        </fieldset>
+        <label id="term">
+          <input type="checkbox" name="terms" class="inline" value="cond" required /> I accept the <a href="https://youtu.be/dQw4w9WgXcQ">terms and conditions (Read)</a>
+			  </label>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+  </body>
+</html>
